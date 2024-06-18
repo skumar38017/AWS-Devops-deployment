@@ -50,6 +50,6 @@
           Create deployment configuration
 
 11. Create a Pipline In CodePipeline
-    
-    
-![image](https://github.com/sumitkumar74604/AWS-Devops-deployment/assets/152770548/a568c8d4-2778-4bec-9169-92c7be606361
+
+![image](https://github.com/sumitkumar74604/AWS-Devops-deployment/assets/152770548/e4e41211-3671-4b4d-9060-3aa6817cdfe6)
+
