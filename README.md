@@ -1,2 +1,46 @@
-# AWS-Devops-deployment
-AWS-Devops-deployment, Using codeCommit, Codedeploy, CodeBuild, CodePipeline, IAMRole
+# AWS-DevOps-Demo-project-Deployment
+# Deploying applications on AWS using DevOps practices involves leveraging several key services: CodeCommit, CodeBuild, CodeDeploy, CodePipeline, and EC2 instances running Ubuntu. Here’s how each service contributes to the deployment process:
+
+1. Create EC2 instance (ubuntu)
+2. create user
+        * Generate HTTPS Git credentials for AWS CodeCommit
+        * Generate Access key
+
+3. Create IAM Role 
+        * codebuild-AWS-DevOps-Demo-Build-service-role (with policy).
+            Codebuild
+            CodeCommit
+            s3
+            cloudwatchLogs
+        
+        * codeDeploy-AWS-DevOps-Demo-Deploy-service-role (with policy).
+            AmazonEC2FullAccess
+            AmazonEC2RoleforAWSCodeDeploy
+            mazonEC2RoleforAWSCodeDeployLimited
+            AmazonS3FullAccess
+            AWSCodeDeployFullAccess
+            AWSCodeDeployRole
+        
+        * EC2-AWS-DevOps-Demo-Deploy-service-role 
+            AmazonEC2FullAccess
+            AmazonS3FullAccess
+            AWSCodeDeployFullAccess
+
+
+4. Create Repo in codeCommit 
+        * clone url for local
+
+5. Create Project in CodeBuild  (edit)
+        * Project configuration
+        * Source
+        * Environment
+        * Buildspec
+        * Artifacts
+        * Service role permissions
+
+6. Create Application in CodeDeploy 
+        * Application configuration
+        * Create deployment configuration
+
+7. Create a Pipline In CodePipeline
+        * Create  pipeline 
