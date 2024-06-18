@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        body {
+            background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+            background-size: cover;
+            background-position: center;
+            color: white; /* Set text color to contrast with background */
+            font-family: Arial, sans-serif; /* Example font family */
+            text-align: center; /* Center align text */
+            padding: 20px; /* Add padding for better readability */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <!-- You can add navigation links or other header content here -->
+    </header>
+
+    <main>
+        <p>This is the main content of my website.</p>
+        <!-- You can add more content such as images, paragraphs, etc., within the main section -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <!-- You can add footer content such as copyright information or links here -->
+    </footer>
+
+    <script>
+        // JavaScript to display current date and time
+        function displayDateTime() {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+            const formattedDate = now.toLocaleDateString('en-US', options);
+            document.body.insertAdjacentHTML('beforeend', `<div id="datetime">${formattedDate}</div>`);
+        }
+
+        displayDateTime(); // Call function to display date and time
+    </script>
+</body>
+</html>
