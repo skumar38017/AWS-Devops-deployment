@@ -1,0 +1,67 @@
+# version: 0.2
+
+# phases:
+#   install:
+#       commands:
+#       # Install any dependencies or tools required for the build process
+#       - echo installing NGINX
+#       - sudo apt-get update -y
+#       - sudo apt-get install nginx -y
+#   build:
+#     commands:
+#       # Run any build commands necessary to generate the output artifacts
+#       - echo Build started on `date`
+#       - cp index.html /var/www/html/
+#   post_build:
+#     commands:
+#       # After the build, deploy the artifacts to a specified location (e.g., S3 bucket)
+#       - echo congiguring NGINX
+# artifacts:
+#   files:
+#     - '/**/*'
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # Install any dependencies or tools required for the build process
+      - echo "Installing NGINX"
+      - sudo apt-get update -y
+      - sudo apt-get install nginx -y
+  build:
+    commands:
+      # Run any build commands necessary to generate the output artifacts
+      - echo "Build started on `date`"
+      - sudo cp index.html /var/www/html/
+  post_build:
+    commands:
+      # Configure NGINX
+      - echo "Configuring NGINX"
+      # - |
+      #   cat <<EOL | sudo tee /etc/nginx/sites-available/default
+      #   server {
+      #       listen 80 default_server;
+      #       listen [::]:80 default_server;
+
+      #       root /var/www/html;
+      #       index index.html;
+
+      #       server_name _;
+
+      #       location / {
+      #           try_files \$uri \$uri/ =404;
+      #       }
+      #   }
+      #   EOL
+      # # Test NGINX configuration
+      # - echo "Testing NGINX configuration"
+      # - sudo nginx -t
+      # # Output NGINX status for debugging
+      # - echo "NGINX status"
+      # - service nginx status
+      # # Restart NGINX to apply the new configuration
+      # - echo "Restarting NGINX"
+      # - service nginx restart 
+artifacts:
+  files:
+    - '**/*'
