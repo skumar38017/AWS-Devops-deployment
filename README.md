@@ -3,8 +3,8 @@
 
 1. Create EC2 instance (ubuntu)
 2. create user
-        * Generate HTTPS Git credentials for AWS CodeCommit
-        * Generate Access key
+          Generate HTTPS Git credentials for AWS CodeCommit
+          Generate Access key
 
 3. Create IAM Role 
         * codebuild-AWS-DevOps-Demo-Build-service-role (with policy).
@@ -28,19 +28,19 @@
 
 
 4. Create Repo in codeCommit 
-        * clone url for local
+          clone url for local
 
 5. Create Project in CodeBuild  (edit)
-        * Project configuration
-        * Source
-        * Environment
-        * Buildspec
-        * Artifacts
-        * Service role permissions
+          Project configuration
+          Source
+          Environment
+          Buildspec
+          Artifacts
+          Service role permissions
 
 6. Create Application in CodeDeploy 
-        * Application configuration
-        * Create deployment configuration
+          Application configuration
+          Create deployment configuration
 
 7. Create a Pipline In CodePipeline
-        * Create  pipeline 
+          Create  pipeline 
