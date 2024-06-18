@@ -8,7 +8,8 @@
           Generate Access key
 
 4. Create IAM Role
-   
+   ![image](https://github.com/sumitkumar74604/AWS-Devops-deployment/assets/152770548/44ccf5ff-5701-4f2f-9fe9-2fab9242ac03)
+
         * codebuild-AWS-DevOps-Demo-Build-service-role (with policy).
             Codebuild
             CodeCommit
