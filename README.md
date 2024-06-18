@@ -9,7 +9,7 @@
 
 4. Create IAM Role
 
-         ![image](https://github.com/sumitkumar74604/AWS-Devops-deployment/assets/152770548/3dd3dd39-bb04-4a40-b08d-95952b81ee49)
+![image](https://github.com/sumitkumar74604/AWS-Devops-deployment/assets/152770548/3dd3dd39-bb04-4a40-b08d-95952b81ee49)
 
         * codebuild-AWS-DevOps-Demo-Build-service-role (with policy).
             Codebuild
