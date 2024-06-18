@@ -42,10 +42,11 @@
           Artifacts
           Service role permissions
 
-9. Create Application in CodeDeploy 
+9. Create Application in CodeDeploy
+   
           Application configuration
           Create deployment configuration
 
-10. Create a Pipline In CodePipeline
+11. Create a Pipline In CodePipeline
     
           Create  pipeline 
